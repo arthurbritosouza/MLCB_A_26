@@ -31,3 +31,8 @@ Exemplos de teste:
 1 - foi 33.33, foi correto por conta dos dados pequenos
 2 - ele utiliza a vetorização para verificar se aquela frase com os outros vetores, e faz a prediçao
 3 - limita o quanto de dado que ele pode verificar
+
+--- RESULTADOS DO LAB 04 --
+Usando a vetorização ele o algoritmo consegue cruzar os dados e verificar usando o % para acha os resultados para cada pergunta com os dados treinados no dataset
+
+
