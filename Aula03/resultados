@@ -29,3 +29,12 @@ horario_atendimento       0.50      1.00      0.67         1
 2 - A diagonal principal mostra as previsões que o modelo acertou.
 
 3 - Porque o modelo pode ter uma acurácia alta acertando apenas a classe que aparece mais vezes e errando as classes menores.
+
+------
+Acuracia via Pipeline: 0.00%
+
+1 - O código utiliza o Pipeline com TF-IDF e Logistic Regression e a acurácia obtida foi de 0.00%.
+
+2 - A vantagem do Pipeline é juntar o pré-processamento e o treinamento do modelo em uma única sequência.
+
+3 - Porque o Pipeline aplica automaticamente o mesmo pré-processamento usado no treino nos dados de teste.
