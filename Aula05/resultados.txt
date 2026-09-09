@@ -1,0 +1,15 @@
+### Respostas do Exercício 4
+1  Regressão Logística é melhor melhor em NLU com embeddings densos, pois o KNN sofre mais com a maldição da dimens
+
+2 Porque os algoritmos aprendem de formas diferentes: a Regressão Logística busca um separador linear (hiperplano) global, enquanto o KNN decide com base na vizinhança local.
+
+3 Porque se o embedding não agrupar frases semanticamente similares no espaço vetorial, a distância matemática não corresponderá à similaridade real, fazendo o KNN errar a classe.
+
+4 Não. O KNN é muito lento para inferência em larga escala, pois precisa calcular a distância contra todo o dataset de treino a cada nova mensagem.
+
+5 A **Regressão Logística**, por ser leve, rápida e lidar bem com probabilidades para o sistema de fallback.
+
+
+Modelo	Accuracy	Precision	Recall	F1
+0	Regressão Logística	75.00%	79.17%	75.00%	75.36%
+1	KNN	56.25%	52.50%	56.25%	52.14%
