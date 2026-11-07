@@ -1,0 +1,17 @@
+MESAFARTAI - REGRAS DA FASE 1 (AC-3)
+
+ETAPA 1 - REVISÃO (banco de dados)
+1. Criar o banco SQLite inicial pelo script src/database.py (tabelas usuarios, doacoes e matches, com seeds de teste).
+2. Executar: python src/database.py (rodar dentro de src/ para o mesafartai.db ficar em src/).
+3. Resultado esperado: " Banco 'mesafartai.db' criado e atualizado!".
+
+ETAPA 2 - MOTOR NLU E TRAVA DE THRESHOLD
+1. Clonar o repositório do projeto (git clone) e abrir a pasta no VS Code.
+2. Criar o requirements.txt na raiz com: streamlit, scikit-learn, pandas e numpy, e instalar com pip install -r requirements.txt.
+3. Criar o src/nlu.py com a classe MotorNLU: TF-IDF (ngram 1 a 2) + RandomForestClassifier de 80 árvores, treinado com o dataset de intenções (cadastrar_doacao, solicitar_alimentos, consultar_status e fora_de_escopo).
+4. Aplicar a trava de segurança: se a confiança for menor que 0.60 ou a intenção for fora_de_escopo, devolver fallback pedindo para o usuário refazer a mensagem.
+5. Executar e testar: python src/nlu.py, conferir que as frases incertas ou fora de escopo caem no fallback.
+
+ENTREGA
+- Relatório de execução em docs/relatório_fase1_etapa2.md com as 5 respostas do guia.
+- Resultados da aula em resultados_aula09.md.
